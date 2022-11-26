@@ -23,5 +23,19 @@ boolean 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function isEvenAndGreaterThanTen(num) {
-
+    if (num > 10) {
+        if ( num % 2 === 0) {
+            return true;
+        } else {
+            return false
+        }
+    } else {
+        return false;
+    }
 }
+
+// 조건
+// 1 num > 10
+// 2 num % 2 === 0
+
+// 논리 연산자 && 로 조건 두개를 같이 넣을 수 있다. => 이게 더 깔금 (num > 10 && num % 2 === 0)
