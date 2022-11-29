@@ -31,5 +31,11 @@ string 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function followingDay(day) {
-
+    if (day === '월요일' || day === '화요일' || day === '수요일' || day === '목요일' || day === '금요일' || day === '토요일' || day === '일요일') {
+        return day;
+    }
+    return '올바른 요일이 아닙니다'
 }
+console.log(followingDay('수요일'))
+
+// 정확한 요일이 경우만 리턴 그 외에는 올바른 요일이 아닙니다. 

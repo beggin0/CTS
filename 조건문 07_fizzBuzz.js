@@ -30,5 +30,14 @@ string 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function fizzBuzz(num) {
-
+    if (num % 15 === 0) {
+        return 'FizzBuzz';
+    } else if (num % 3 === 0) {
+        return 'Fizz';
+    } else if (num % 5 === 0) {
+        return 'Buzz';
+    }
+    return 'No FizzBuzz';
 }
+
+// 공통인 15 먼저 거르고 3, 5 거른다음 나머지 

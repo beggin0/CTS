@@ -26,7 +26,31 @@ number 타입을 리턴해야 합니다.
 */
 
 // TODO: 여기에 코드를 작성합니다.
-
 function daysInMonth(month) {
-
+    if (month === 2) {
+        return 28;
+    } else if (month === 4 || month === 6 || month === 9 || month === 11) {
+        return 30;
+    } else {
+        return 31;
+    }
 }
+console.log(daysInMonth(2));
+daysInMonth(2);
+
+// 나올수 있는 일수가 28, 30, 31 이걸 나누면
+// 2월 28 
+// 1,3,5,7,8,10,12월 31
+// 4, 6, 9, 11월 30
+// month === 4, 6, 9, 11 요건 처리를 못하는게 맞지?? 이거나 저거나할 때 or 형식으로 해줘야지만 하는가 
+// or을 || 이렇게 표현해 줘야지 아니면 넘어가질 않는다. , 쓰지말고 || 쓰자. 
+// if (1 <= month <= 12) {
+//     if (month === 2) {
+//         return 28;
+//     } else if (month === 4, 6, 9, 11) {
+//         return 30;
+//     } else {
+//         return 31;
+//     }
+// }
+// 28일 외에 다 30일로 읽힌다. 

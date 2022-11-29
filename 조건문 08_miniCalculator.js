@@ -24,5 +24,22 @@ number 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function miniCalculator(num1, num2, operator) {
-
+    if (operator === '+') {
+        return num1 + num2;
+    } else if (operator === '-') {
+        return num1 - num2;
+    } else if (operator === '*') {
+        return num1 * num2;
+    } else if (operator === '/') {
+        return num1 / num2;
+    }
 }
+
+// 미니계산기
+// num1     operator    num2
+// 조건 4가지로 각각 계산식 적어주기
+
+// operator가 + - * / 일경우 num1 operator num2 적용이 가능한가
+// if (operator === '+' || operator === '-' || operator === '*' || operator === '/') {
+//     return num1 operator num2;
+// }
