@@ -39,5 +39,25 @@ Math 객체를 검색해 봅니다. (js math object 또는 자바스크립트 ma
 // TODO: 여기에 코드를 작성합니다.
 
 function isPythagorean(side1, side2, side3) {
-
+    if (Math.max(side1, side2, side3) === side1) {
+        if (Math.pow(side1, 2) === Math.pow(side2, 2) + Math.pow(side3, 2)) {
+            return true;
+        }
+        return false;
+    }
+    else if (Math.max(side1, side2, side3) === side2) {
+        if (side2 ** 2 === side1 ** 2 + side3 ** 3) {
+            return true;
+        }
+        return false;
+    }
+    else if (Math.max(side1, side2, side3) === side3) {
+        if (side3 **= 2 === (side1 **= 2) + (side2 **= 2)) {
+            return true;
+        }
+        return false;
+    }
 }
+
+// 세 변을 비교해서 가장 큰 변을 구하고 Math.max(num1, num2, num3)  Math 객체
+// 주의사항의 3가지 방법 Math.pow(), **, **=
