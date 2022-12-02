@@ -46,7 +46,7 @@ function isPythagorean(side1, side2, side3) {
         return false;
     }
     else if (Math.max(side1, side2, side3) === side2) {
-        if (side2 ** 2 === side1 ** 2 + side3 ** 3) {
+        if (side2 ** 2 === side1 ** 2 + side3 ** 2) {
             return true;
         }
         return false;
@@ -59,5 +59,20 @@ function isPythagorean(side1, side2, side3) {
     }
 }
 
+console.log(isPythagorean(23, 7, 25))
+
 // 세 변을 비교해서 가장 큰 변을 구하고 Math.max(num1, num2, num3)  Math 객체
 // 주의사항의 3가지 방법 Math.pow(), **, **=
+// testd에서는 side1 * side1 을 원한다. **= 요거 대신에 앞에 내용처럼 쓰니 통과.
+
+// function isPythagorean(side1, side2, side3) {
+//     const pow1 = side1 * side1;
+//     const pow2 = side2 ** 2;
+//     const pow3 = Math.pow(side3, 2);
+  
+//     if (pow1 === pow2 + pow3 || pow2 === pow1 + pow3 || pow3 === pow1 + pow2) {
+//       return true;
+//     }
+  
+//     return false;
+// }
