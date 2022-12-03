@@ -25,5 +25,12 @@ boolean 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function or(expression1, expression2) {
-
+    if (expression1 === false && expression2 === false) {
+        return false;
+    }
+    return true;
 }  
+
+// or 연산자 둘중 하나라도 true 면 true 반환
+
+// 레퍼런스 !== 과 && 로 하나하나 표현.
