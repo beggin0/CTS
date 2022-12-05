@@ -33,3 +33,6 @@ string 타입을 리턴해야 합니다.
 function addOneSecond(hour, minute, second) {
 
 }
+
+// 나올 메시지 1초 + 했을경우 분, 시간 바뀌는거 
+// 23 59 59 일경우 전부 0
