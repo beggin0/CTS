@@ -31,7 +31,12 @@ string 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function addOneSecond(hour, minute, second) {
-    
+    if (second === 59) {
+        minute += 1;
+        second = 0;
+      } else {
+        second += 1;
+    }
 }
 
 // 나올 메시지 1초 + 했을경우 분, 시간 바뀌는거 
