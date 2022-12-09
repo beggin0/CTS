@@ -34,5 +34,17 @@ javascript에서 거짓으로 취급하는 값에 대해 검색해 봅니다. (j
 // TODO: 여기에 코드를 작성합니다.
 
 function isFalsy(anything) {
-
+    if (anything === false || anything === 0 || anything === -0 || anything === null || anything === undefined || anything === 0n || Number.isNaN(anything) || anything === '') {
+        return true;
+    }
+    return false;
 }
+
+console.log(isFalsy(NaN))
+// https://developer.mozilla.org/ko/docs/Glossary/Falsy js falsy value 설명
+// NaN 판별 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/NaN
+// isNaN()과 Number.isNaN()의 차이를 주의해야 합니다. 
+// isNaN은 현재 값이 NaN이거나, 숫자로 변환했을 때 NaN이 되면 참을 반환하지만, Number.isNaN은 현재 값이 NaN이어야만 참을 반환합니다.
+
+// 레퍼런스 답 return !Boolean(anything);
+// Boolean() 설명 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Boolean
