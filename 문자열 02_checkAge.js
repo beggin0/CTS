@@ -35,3 +35,4 @@ function checkAge(name, age) {
     return 'Go home, ' + name + '!';
 }
 // 힌트대로, age >= 21 웰컴 나머지 다 고홈
+// 레터럴로 표현 가능
