@@ -29,5 +29,9 @@ string 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function checkAge(name, age) {
-
+    if (age >= 21) {
+        return 'Welcome, ' + name + '!';
+    }
+    return 'Go home, ' + name + '!';
 }
+// 힌트대로, age >= 21 웰컴 나머지 다 고홈

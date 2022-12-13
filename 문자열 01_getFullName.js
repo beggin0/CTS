@@ -26,5 +26,6 @@ string 타입을 리턴해야 합니다.
 // TODO: 여기에 코드를 작성합니다.
 
 function getFullName(firstName, lastName) {
-
+    return firstName + ' ' + lastName 
 }
+// 힌트대로
