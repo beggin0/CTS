@@ -20,3 +20,10 @@ number 타입을 리턴해야 합니다.
 function getLengthOfWord(word) {
     return word.length;
 }
+
+// 레퍼런스
+// if (word.length > 0) {
+//     return word.length;
+//   }
+//   return 0;
+// }
